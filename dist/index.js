@@ -92,6 +92,4 @@ class MuxRouter {
         });
     }
 }
-const muxRouter = new MuxRouter();
-exports.muxRouter = muxRouter;
-module.exports = muxRouter; // Export to js
+exports.muxRouter = new MuxRouter();

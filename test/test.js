@@ -13,7 +13,7 @@ describe('mux-router tests', () => {
     it('Generate avaliable routes on micro service', (done) => {
         
         const patern = JSON.stringify([{ 'path': '/users', 'method': 'get' }, { 'path': '/clients', 'method': 'get' }]);
-        const muxRouter = require('../dist/index.js');
+        const muxRouter = require('../dist/index.js').muxRouter;
 
         // Export your app routes using muxRouter
         // The routers of your app will be avaliable on http://localhost:3000/mux-router/routes
@@ -38,7 +38,7 @@ describe('mux-router tests', () => {
     it('Get routes from micro service and create requests in Gateway Api', (done) => {
         
         const patern = JSON.stringify([{ name: 'Thor', email: 'thor@asgard.com' }]);
-        const muxRouter = require('../dist/index.js');
+        const muxRouter = require('../dist/index.js').muxRouter;
 
         // Import the routes of other app to use
         muxRouter.generateRequests('http://localhost:3000', (req, res, next) => {

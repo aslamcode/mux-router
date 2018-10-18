@@ -12,7 +12,7 @@ $ npm install --save mux-router
 ```javascript
 const express = require('express');
 const { Router } = require('express');
-const mux = require('mux-router');
+const mux = require('mux-router').muxRouter;
 
 const app = express();
 const router = Router();
@@ -42,7 +42,7 @@ app.listen(3000);
 
 ```javascript
 const express = require('express');
-const mux = require('mux-router');
+const mux = require('mux-router').muxRouter;
 const app = express();
 
 // Import the routes of other app to use

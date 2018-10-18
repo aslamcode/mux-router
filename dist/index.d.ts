@@ -36,5 +36,5 @@ declare class MuxRouter {
     private createMuxRouterRoutes;
     private createRequests;
 }
-declare const muxRouter: MuxRouter;
-export { muxRouter };
+export declare const muxRouter: MuxRouter;
+export {};
