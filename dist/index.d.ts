@@ -21,7 +21,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ***************************************************************************** */
-import { Request, Response, NextFunction } from "express";
 declare class MuxRouter {
     private _avaliableRoutes;
     private _router;
@@ -31,7 +30,7 @@ declare class MuxRouter {
     constructor();
     generateRoutes(...routers: any[]): void;
     generateRequests(repositoryUrl: string, callback: any): void;
-    redirect(url: string, req: Request, res: Response, next: NextFunction): void;
+    redirect(url: string, req: any, res: any, next: any): void;
     readonly router: any;
     private createAvaliableRoutes;
     private createMuxRouterRoutes;

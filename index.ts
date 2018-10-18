@@ -49,7 +49,7 @@ class MuxRouter {
 	}
 
 	// Redirect a request
-	redirect(url: string, req: Request, res: Response, next: NextFunction) {
+	redirect(url: string, req: any, res: any, next: any) {
 		this._httpProxy(url)(req, res, next);
 	}
 	
