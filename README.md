@@ -4,7 +4,7 @@ It's a [node](http://nodejs.org) module for Micro Services to get avaliable rout
 ## Installation
 
 ```bash
-$ npm install mux-router
+$ npm install --save mux-router
 ```
 
 ## How to export your app routes in your micro service
