@@ -1,4 +1,4 @@
-# mux-router
+# Mux Router
 It's a [node](http://nodejs.org) module for Micro Services to get avaliable routes and import them in other Gateway App.
 
 ## Installation
