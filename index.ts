@@ -105,4 +105,7 @@ class MuxRouter {
 	}
 }
 
-module.exports = new MuxRouter();
+const muxRouter: MuxRouter = new MuxRouter();
+
+module.exports = muxRouter; // Export to js
+export { muxRouter }; // Export to typescript
