@@ -1,0 +1,41 @@
+{
+	"name": "mux-router",
+	"version": "1.0.0",
+	"description": "Get the avaliable routes on your Micro Service Node App and import the same routes in other Gateway Node App.",
+	"main": "./index.js",
+	"types": "./index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "mocha --reporter spec"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aslamcode/mux-router.git"
+	},
+	"keywords": [
+		"mux-router",
+		"router",
+		"mux",
+		"routes",
+		"express"
+	],
+	"author": "Guilherme Martins Arantes",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/aslamcode/mux-router.git"
+	},
+	"homepage": "https://github.com/aslamcode/mux-router#readme",
+	"devDependencies": {
+		"chai": "^4.1.2",
+		"mocha": "^5.2.0",
+		"typescript": "^3.0.1"
+	},
+	"dependencies": {
+		"@types/express": "github:types/express",
+		"@types/node": "^10.11.7",
+		"@types/request": "^2.47.1",
+		"express": "^4.16.4",
+		"express-http-proxy": "^1.4.0",
+		"request": "^2.88.0"
+	}
+}
