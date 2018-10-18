@@ -34,12 +34,5 @@ bower_components
 .DS_Store
 Thumbs.db
 
-# Ignore built ts files
-*/dist/**/*
-/dist/**/*
-dist/**/*
-/dist/
-dist/
-
 #Ignore env file
 src/config/config.ts
