@@ -45,7 +45,13 @@ class MuxRouter {
     }
     // Redirect a request
     redirect(url, req, res, next) {
-        this._httpProxy(url)(req, res, next);
+        // Redefine Header
+        const proxyReqOptDecorator = (proxyReqOpts) => {
+            // you can update headers
+            proxyReqOpts.headers["Content-Type"] = "application/x-www-form-urlencoded";
+            return proxyReqOpts;
+        };
+        this._httpProxy(url, { proxyReqOptDecorator })(req, res, next);
     }
     // Get the attribute _router
     get router() { return this._router; }
