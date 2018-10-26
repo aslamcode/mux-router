@@ -53,7 +53,7 @@ class MuxRouter {
 		// Redefine Header
 		const proxyReqOptDecorator = (proxyReqOpts: any) => {
 			// you can update headers
-			proxyReqOpts.headers["Content-Type"] = "application/x-www-form-urlencoded";
+			proxyReqOpts.headers["Content-Type"] = "application/json";
 			return proxyReqOpts;
 		};
 		this._httpProxy(url, { proxyReqOptDecorator })(req, res, next);
