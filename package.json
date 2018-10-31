@@ -1,6 +1,6 @@
 {
 	"name": "mux-router",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "Get the avaliable routes on your Micro Service Node App and import the same routes in other Gateway Node App.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
