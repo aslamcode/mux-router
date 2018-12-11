@@ -45,18 +45,7 @@ class MuxRouter {
     }
     // Redirect a request
     redirect(url, req, res, next) {
-        // Redefine Header
-        const userResDecorator = function (proxyRes, proxyResData, userReq, userRes) {
-            const data = JSON.parse(proxyResData.toString('utf8'));
-            return JSON.stringify(data);
-        };
-        const proxyReqOptDecorator = (proxyReqOpts) => {
-            // you can update headers
-            proxyReqOpts.headers["Content-Type"] = "application/json";
-            return proxyReqOpts;
-        };
-        const parseReqBody = false;
-        this._httpProxy(url, { proxyReqOptDecorator, parseReqBody, userResDecorator })(req, res, next);
+        this._httpProxy(url, { parseReqBody: false, reqBodyEncoding: null })(req, res, next);
     }
     // Get the attribute _router
     get router() { return this._router; }
